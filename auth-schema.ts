@@ -42,25 +42,3 @@ export const verification = pgTable("verification", (t) => ({
   createdAt: t.timestamp(),
   updatedAt: t.timestamp(),
 }));
-
-export const userLoginLogs = pgTable("user_login_logs", (t) => ({
-  id: t.serial().primaryKey(),
-  createdAt: t.timestamp().notNull().defaultNow(),
-  updatedAt: t.timestamp().notNull().defaultNow(),
-  ipAddress: t.text(),
-  userAgent: t.text(),
-  userId: t.text().notNull(),
-  token: t.text().notNull(),
-  userEmail: t.text().notNull(),
-}));
-
-export const userSignupLogs = pgTable("user_signup_logs", (t) => ({
-  id: t.serial().primaryKey(),
-  createdAt: t.timestamp().notNull().defaultNow(),
-  updatedAt: t.timestamp().notNull().defaultNow(),
-  ipAddress: t.text(),
-  userAgent: t.text(),
-  userId: t.text().notNull(),
-  token: t.text().notNull(),
-  userEmail: t.text().notNull(),
-}));
