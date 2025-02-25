@@ -1,0 +1,61 @@
+---
+description: this is context for what this project is
+globs: 
+---
+# Blog Website Project Documentation
+
+## Project Overview
+A multi-role blog platform with hierarchical permissions:
+- **Visitors**: Basic engagement features
+- **Editors**: Content creation tools
+- **Head Editors**: Publishing authority
+- **Admins**: Full system control
+
+## Roles & Features
+
+### Visitor Features
+-  Like posts & comments
+-  Save posts to favorites
+-  Add comments
+-  View published posts
+-  Public profile management
+
+### Editor Features
+-  Create/Edit draft posts
+-  Manage personal posts
+-  Submit posts for review
+-  View post statistics
+-  Edit unpublished content
+
+### Head Editor Features
+-  Publish/Unpublish posts
+-  Edit any post content
+-  Delete inappropriate posts
+-  Review submissions queue
+-  Monitor platform activity
+
+### Admin Features
+-  **Superuser Privileges** (all lower role capabilities)
+-  **User Management**:
+  - Ban/Unban accounts
+  - Promote/Demote roles
+  - Delete user profiles
+  - Reset passwords
+-  **Content Moderation**:
+  - Remove/hide posts
+  - Delete comments
+  - Toggle visibility
+  - Audit logs
+-  **System Configuration**:
+  - Manage categories/tags
+  - Configure site rules
+  - Backup/Restore data
+  - Manage API access
+
+## Frontend Components
+- Public Feed Page
+- User Dashboard
+- Editor Workspace
+- Head Editor Workspace (similar to Editor Workspace)
+- Admin Control Panel
+- Comment Section
